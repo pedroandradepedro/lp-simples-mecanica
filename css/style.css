@@ -46,6 +46,7 @@ button {
 
 .header-bg {
   background: var(--cor-azul-nav);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header {
@@ -121,6 +122,64 @@ button {
 .botao:hover {
   background: var(--cor-laranja-botao-hover);
   transition: 0.2s;
+}
+
+/* Para responsividade - Menu Hambúrguer */
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .menu-item {
+    display: none;
+  }
+  .login-botao {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu li a {
+    color: var(--cor-branco);
+  }
+  .mobile-menu .menu-item {
+    display: block;
+    padding-top: 5px;
+  }
+  .mobile-menu .login-botao {
+    display: block;
+    text-align: center;
+  }
+  .mobile-menu .login-botao button {
+    display: flex;
+    max-width: 100%;
+  }
+  .segmentos-mobile {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .open {
+    display: block;
+  }
 }
 
 /* Main */

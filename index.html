@@ -19,27 +19,51 @@
 
     <header class="header-bg">
 
-        <div class="header">
+        <nav class="header">
 
             <div class="logo">
                 <h1><span class="logo-laranja">Yes</span>Dev</h1>
             </div>
 
-            <nav>
+            <div>
                 <ul class="header-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Ferramentas</a></li>
-                    <li class="segmentos">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">Ferramentas</a></li>
+                    <li class="segmentos menu-item">
                         <a href="#">Segmentos</a>
                         <img src="./imgs/Setinha.svg" alt="Setinha para menu suspenso">
                     </li>
-                    <li><a href="#">Nossos Parceiros</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li class="menu-item"><a href="#">Nossos Parceiros</a></li>
+                    <li class="menu-item"><a href="#">Blog</a></li>
                 </ul>
 
-            </nav>
 
-            <a href="#" class="botao">Solicitar Demonstração!</a>
+            </div>
+
+            <a href="#" class="botao login-botao">Solicitar Demonstração!</a>
+
+            <div class="mobile-menu-icon">
+                <button onclick="abrirMenu()"><img class="hamburguer" src="./imgs/Menu-mobile.svg" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+
+            <ul>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">Ferramentas</a></li>
+                <li class="segmentos menu-item">
+                    <div class="segmentos-mobile">
+                        <a href="#">Segmentos</a>
+                        <img src="./imgs/Setinha.svg" alt="Setinha para menu suspenso">
+                    </div>
+                </li>
+                <li class="menu-item"><a href="#">Nossos Parceiros</a></li>
+                <li class="menu-item"><a href="#">Blog</a></li>
+            </ul>
+
+            <a href="#" class="botao login-botao">Solicitar Demonstração!</a>
 
         </div>
 
@@ -149,7 +173,7 @@
     </main>
 
 
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
