@@ -44,6 +44,30 @@ button {
   cursor: pointer;
 }
 
+/* ANIMAÇÕES */
+
+.fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+
+[data-anime] {
+  opacity: 0;
+}
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
 .header-bg {
   background: var(--cor-azul-nav);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -158,13 +182,18 @@ button {
   .mobile-menu li a {
     color: var(--cor-branco);
   }
+  .mobile-menu li a:hover {
+    color: var(--cor-laranja);
+    transition: 0.2s;
+  }
   .mobile-menu .menu-item {
     display: block;
-    padding-top: 5px;
+    padding-top: 20px;
   }
   .mobile-menu .login-botao {
     display: block;
     text-align: center;
+    margin-top: 20px;
   }
   .mobile-menu .login-botao button {
     display: flex;
@@ -377,6 +406,30 @@ button {
   font-size: 14px;
 }
 
+.celularForm {
+  margin-bottom: 15px;
+}
+
+.celularForm input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.celularForm input.erro-borda {
+  border-color: red;
+  background-color: #fff0f0;
+}
+
+.msg-erro {
+  color: red;
+  font-size: 12px;
+  display: none;
+  margin-top: 5px;
+}
+
 @media (max-width: 1400px) {
   .main {
     grid-template-columns: 1fr 1fr;
@@ -392,5 +445,65 @@ button {
   }
   .main-img {
     display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main {
+    grid-template-columns: 1fr;
+    padding: 50px 0;
+  }
+  .main-bg {
+    background-position: bottom;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .titulo-chave h1::after {
+    content: url("../imgs/chave-de-fenda.png");
+    display: inline-block;
+    transform: scale(1);
+    position: absolute;
+    top: -10px;
+    right: -30px;
+  }
+  .subtitulo {
+    font-size: 24px;
+  }
+  .check-item {
+    font-size: 20px;
+  }
+  .main-esquerda {
+    gap: 50px;
+  }
+  .titulo-oficina-bg img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    font-size: 24px;
+  }
+  .titulo-oficina-bg img {
+    width: 32px;
+  }
+  .titulo-chave {
+    display: flex;
+    position: relative;
+  }
+  .titulo-chave h1::after {
+    content: url("../imgs/chave-de-fenda.png");
+    display: inline-block;
+    transform: scale(0.8);
+    position: absolute;
+    left: 480px;
+    top: -18px;
+  }
+  .subtitulo {
+    font-size: 16px;
+  }
+  .check-item {
+    font-size: 16px;
   }
 }

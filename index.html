@@ -76,7 +76,7 @@
 
             <div class="main-esquerda">
 
-                <div class="titulo-e-sub">
+                <div class="titulo-e-sub fadeInLeft" data-anime="100">
 
                     <div class="titulo">
 
@@ -103,7 +103,7 @@
 
                 </div>
 
-                <div class="main-check">
+                <div class="main-check fadeInLeft" data-anime="200">
 
                     <div class="check-item">
                         <img src="./imgs/Check.svg" alt="Check">
@@ -122,11 +122,11 @@
 
             </div>
 
-            <div class="main-img">
+            <div class="main-img" data-anime="300">
                 <img src="./imgs/mecanico.png" alt="Mecânico segurando uma chave de boca olhando para frente">
             </div>
 
-            <div class="main-direita">
+            <div class="main-direita fadeInRight" data-anime="400">
 
                 <h3>Experimente <span class="gratis">grátis</span> nosso software</h3>
 
@@ -134,13 +134,17 @@
 
                     <div class="form-inputs">
 
-                        <input type="text" placeholder="Nome da mecânica">
+                        <input type="text" placeholder="Nome da mecânica" required>
 
-                        <input type="text" placeholder="Seu nome">
+                        <input type="text" placeholder="Seu nome" required>
 
-                        <input type="text" placeholder="Número de Whatsapp">
+                        <div class="input-group">
+                            <input type="text" id="celular" placeholder="Número de Whatsapp">
+                            <div id="msgErro" class="msg-erro">O número deve conter 11 dígitos (DDD + Número).</div>
+                        </div>
 
-                        <select name="foco" id="foco" required>
+
+                        <select name="select" id="select" required>
                             <option value="" disabled selected>Selecione uma Opção</option>
                             <option value="visibilidade">Visibilidade</option>
                             <option value="organizacao">Organização</option>
@@ -172,7 +176,7 @@
 
     </main>
 
-
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
