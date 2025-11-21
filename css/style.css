@@ -7,6 +7,7 @@
   --cor-placeholder: #717171;
   --cor-azul-bg: #011456;
   --cor-azul-nav: #001665;
+  --cor-cinza-oficina: #3d3d3d;
 }
 
 * {
@@ -17,6 +18,10 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 a {
@@ -30,6 +35,11 @@ ul {
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 .header-bg {
@@ -102,4 +112,102 @@ img {
     flex-direction: column;
     gap: 30px;
   }
+}
+
+/* Main */
+
+.main-bg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-grow: 1;
+  background: var(--cor-azul-bg);
+  padding: 0 30px 0 30px;
+}
+
+.main {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  /* gap: 30px; */
+}
+
+.main-esquerda {
+  display: grid;
+  gap: 90px;
+  position: relative;
+}
+
+.titulo {
+  color: var(--cor-branco);
+  font-size: 22px;
+}
+
+.titulo-e-sub {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo-oficina-bg {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--cor-branco);
+  color: var(--cor-cinza-oficina);
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+.titulo-oficina {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.titulo-chave {
+  display: flex;
+  position: relative;
+}
+
+.titulo-chave h1::after {
+  content: url("../imgs/chave-de-fenda.png");
+  display: inline-block;
+  transform: scale(0.7);
+  position: absolute;
+  top: -20px;
+}
+
+.subtitulo {
+  color: var(--cor-branco);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main-check {
+  color: var(--cor-branco);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 300;
+}
+
+.check-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 70px;
+}
+
+.main-img img {
+  max-width: 125%;
 }
