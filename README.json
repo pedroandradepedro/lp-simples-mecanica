@@ -1,0 +1,38 @@
+{
+  "nome": "Pedro Henrique Vitoriano de Andrade",
+  "idade": "24 anos",
+  "estado_civil": "Casado",
+  "profissao": "Futuro Programador",
+  "principais_softskills": [
+    "Conhecimento em SCRUM",
+    "Kanban",
+    "Metodologias ágeis",
+    "Trabalho em equipe",
+    "Liderança",
+    "Autonomia",
+    "Comunicação",
+    "Espírito de corpo"
+  ],
+  "principais_ferramentas": {
+    "design_e_audiovisual": [
+      "Adobe Photoshop",
+      "Adobe Premiere",
+      "Adobe Illustrator",
+      "CapCut",
+      "Figma"
+    ],
+    "programacao": [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Python",
+      "Bootstrap",
+      "Git",
+      "Github",
+      "Node.js",
+      "MySQL",
+      "React"
+    ]
+  },
+  "objetivo_proficional": "Ser um desenvolvedor web."
+}
