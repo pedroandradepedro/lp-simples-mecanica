@@ -500,7 +500,7 @@ button {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 555px) {
   .titulo-chave h1::after {
     content: url("../imgs/chave-de-fenda.png");
     display: inline-block;
