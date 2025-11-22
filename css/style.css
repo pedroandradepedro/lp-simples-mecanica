@@ -499,3 +499,14 @@ button {
     font-size: 16px;
   }
 }
+
+@media (max-width: 800px) {
+  .titulo-chave h1::after {
+    content: url("../imgs/chave-de-fenda.png");
+    display: inline-block;
+    transform: scale(0.7);
+    position: absolute;
+    top: 42px;
+    left: 80px;
+  }
+}
